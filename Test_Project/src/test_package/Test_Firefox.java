@@ -23,3 +23,5 @@ public class Test_Firefox
 	driver.findElement(By.partialLinkText("Dhoni")).click();
 	}
 }
+
+// Test new Git check
