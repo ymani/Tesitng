@@ -1,4 +1,6 @@
 package test_package;
+
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
@@ -16,7 +18,8 @@ import org.openqa.selenium.interactions.Actions;
 
 public class Test_StreamConnect_Logout_8 {
 	
-	public static void main(String[] args)
+	@Test
+	public void Logout8()
 	{
 		    
 		System.setProperty("webdriver.chrome.driver" , "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5269" started-at="2015-01-28T17:36:06Z" finished-at="2015-01-28T17:36:11Z">
+  <suite name="Default suite" duration-ms="3348" started-at="2015-01-28T19:19:10Z" finished-at="2015-01-28T19:19:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5269" started-at="2015-01-28T17:36:06Z" finished-at="2015-01-28T17:36:11Z">
-      <class name="test_package.TestNG_StreamConnect">
-        <test-method status="PASS" signature="StreamConnect()[pri:0, instance:test_package.TestNG_StreamConnect@546a03af]" name="StreamConnect" duration-ms="5260" started-at="2015-01-28T11:36:06Z" finished-at="2015-01-28T11:36:11Z">
+    <test name="Default test" duration-ms="3348" started-at="2015-01-28T19:19:10Z" finished-at="2015-01-28T19:19:13Z">
+      <class name="test_package.Test_StreamConnect_Logout_1">
+        <test-method status="PASS" signature="Logout1()[pri:0, instance:test_package.Test_StreamConnect_Logout_1@546a03af]" name="Logout1" duration-ms="3333" started-at="2015-01-28T13:19:10Z" finished-at="2015-01-28T13:19:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- StreamConnect -->
-      </class> <!-- test_package.TestNG_StreamConnect -->
+        </test-method> <!-- Logout1 -->
+      </class> <!-- test_package.Test_StreamConnect_Logout_1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

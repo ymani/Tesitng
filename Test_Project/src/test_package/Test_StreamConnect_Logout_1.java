@@ -11,11 +11,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 
 public class Test_StreamConnect_Logout_1 {
 	
-	public static void main(String[] args)
+	@Test
+	public void Logout1()
 	{
 				
 		System.setProperty("webdriver.chrome.driver" , "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
@@ -61,12 +63,15 @@ public class Test_StreamConnect_Logout_1 {
 		//driver.findElement(By.id("ContentPlaceHolder1_MainContentNest_MainContent_ibUserSetsPacs"));
 		
 		System.out.println("Logout successful");
+		driver.quit();
 		}
 		
 		else
 		{
 			System.out.println("Logout Not successful");
+			driver.quit();
 		}
+		
 		
 	}
 }

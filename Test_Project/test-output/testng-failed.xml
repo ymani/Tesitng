@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test_package.TestNG_StreamConnect">
+      <class name="test_package.Test_StreamConnect_Logout_8">
         <methods>
-          <include name="StreamConnect"/>
+          <include name="Logout8"/>
         </methods>
-      </class> <!-- test_package.TestNG_StreamConnect -->
+      </class> <!-- test_package.Test_StreamConnect_Logout_8 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
