@@ -1,4 +1,6 @@
 package test_package;
+
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
@@ -21,8 +23,8 @@ public class Test_Stream_Connect {
         //System.setProperty("webdriver.ie.driver" , "C:\\Program Files (x86)\\Internet Explorer\\IEDriverServer_64.exe");
 		
 		//WebDriver driver = new ChromeDriver();
-		//WebDriver driver = new FirefoxDriver();
-		WebDriver driver = new InternetExplorerDriver();
+		WebDriver driver = new FirefoxDriver();
+		//WebDriver driver = new InternetExplorerDriver();
         //WebDriver driver = new SafariDriver();
 		
 		WebDriverWait wait = new WebDriverWait (driver, 40);
@@ -53,10 +55,10 @@ public class Test_Stream_Connect {
 		
 		WebElement Home = driver.findElement(By.id("ContentPlaceHolder1_MainContentNest_ibtnHome"));
 		Home.click();
-		wait.until (ExpectedConditions.visibilityOfElementLocated(By.id("ContentPlaceHolder1_lsmaster")));
+		/*wait.until (ExpectedConditions.visibilityOfElementLocated(By.id("ContentPlaceHolder1_lsmaster")));
 		
 		WebElement Logout = driver.findElement(By.id("ContentPlaceHolder1_lsmaster"));
-		Logout.click();
+		Logout.click();*/
 		
 		//((JavascriptExecutor) driver).executeScript("window.scrollTo(0,"+Submit.getLocation().y+")");
 		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Submit);		

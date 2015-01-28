@@ -8,8 +8,14 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-public class Test_UHV_using_CSS_XPATH {
-	public static void main(String[] args)
+import org.testng.annotations.Test;
+
+public class Test_UHV_using_CSS_XPATH 
+{
+	
+	@Test
+	public void UHV()
+	
 	{
 		System.setProperty("webdriver.chrome.driver" , "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
