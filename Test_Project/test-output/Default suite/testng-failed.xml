@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test_package.Test_StreamConnect_Logout_8">
+      <class name="test_package.Annotate_Test">
         <methods>
-          <include name="Logout8"/>
+          <include name="Annotate"/>
         </methods>
-      </class> <!-- test_package.Test_StreamConnect_Logout_8 -->
+      </class> <!-- test_package.Annotate_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

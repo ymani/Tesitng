@@ -27,8 +27,8 @@ public class Test_StreamConnect_Logout_8 {
        System.setProperty("webdriver.ie.driver" , "C:\\Program Files (x86)\\Internet Explorer\\IEDriverServer_64.exe");
 		
 		//WebDriver driver = new ChromeDriver();
-		WebDriver driver = new FirefoxDriver();
-		//WebDriver driver = new InternetExplorerDriver();
+		//WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new InternetExplorerDriver();
         //WebDriver driver = new SafariDriver();
 		
 		WebDriverWait wait = new WebDriverWait (driver, 60);
