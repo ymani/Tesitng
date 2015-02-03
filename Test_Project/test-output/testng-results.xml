@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="63831" started-at="2015-01-29T23:33:20Z" finished-at="2015-01-29T23:34:24Z">
+  <suite name="Default suite" duration-ms="69196" started-at="2015-01-30T16:22:28Z" finished-at="2015-01-30T16:23:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="63831" started-at="2015-01-29T23:33:20Z" finished-at="2015-01-29T23:34:24Z">
+    <test name="Default test" duration-ms="69196" started-at="2015-01-30T16:22:28Z" finished-at="2015-01-30T16:23:37Z">
       <class name="test_package.Annotate_Test">
-        <test-method status="FAIL" signature="Annotate()[pri:0, instance:test_package.Annotate_Test@546a03af]" name="Annotate" duration-ms="63823" started-at="2015-01-29T17:33:20Z" finished-at="2015-01-29T17:34:24Z">
+        <test-method status="FAIL" signature="Annotate()[pri:0, instance:test_package.Annotate_Test@546a03af]" name="Annotate" duration-ms="69161" started-at="2015-01-30T10:22:28Z" finished-at="2015-01-30T10:23:37Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Timed out after 60 seconds waiting for visibility of element located by By.id: ContentPlaceHolder1_MainContentNest_grdvodProcedures_grdITPanel_0
+              <![CDATA[Timed out after 60 seconds waiting for visibility of element located by By.id: ContentPlaceHolder1_MainContentNest_grdvodGallery_ibtnGallery_3
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
 System info: host: 'STAN-4P5ZP12', ip: '172.28.82.55', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=9, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:30911/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 43cc9943-8df0-4592-99a4-ab18c0b3da8f]]>
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=9, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:23863/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: e88bc410-100a-4ebc-81c6-93215b75a7f7]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 60 seconds waiting for visibility of element located by By.id: ContentPlaceHolder1_MainContentNest_grdvodProcedures_grdITPanel_0
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 60 seconds waiting for visibility of element located by By.id: ContentPlaceHolder1_MainContentNest_grdvodGallery_ibtnGallery_3
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
 System info: host: 'STAN-4P5ZP12', ip: '172.28.82.55', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=9, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:30911/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 43cc9943-8df0-4592-99a4-ab18c0b3da8f
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=9, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:23863/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: e88bc410-100a-4ebc-81c6-93215b75a7f7
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at test_package.Annotate_Test.Annotate(Annotate_Test.java:53)
+	at test_package.Annotate_Test.Annotate(Annotate_Test.java:59)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -51,13 +51,14 @@ Session ID: 43cc9943-8df0-4592-99a4-ab18c0b3da8f
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchWindowException: Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15 milliseconds
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with id == ContentPlaceHolder1_MainContentNest_grdvodGallery_ibtnGallery_3 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 310 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
 System info: host: 'STAN-4P5ZP12', ip: '172.28.82.55', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=9, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:30911/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 43cc9943-8df0-4592-99a4-ab18c0b3da8f
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=9, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:23863/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: e88bc410-100a-4ebc-81c6-93215b75a7f7
 	at sun.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
