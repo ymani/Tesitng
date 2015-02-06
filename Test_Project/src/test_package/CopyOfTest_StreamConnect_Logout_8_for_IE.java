@@ -1,5 +1,8 @@
  package test_package;
 
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -17,28 +20,41 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 
 
-public class Test_StreamConnect_Logout_8 {
+public class CopyOfTest_StreamConnect_Logout_8_for_IE {
+	
+protected static WebDriver driver;
+protected static WebDriverWait wait;
+protected static String myURL="http://172.28.182.100/Account/Presentation/Login.aspx?ReturnUrl=/core/presentation/schome.aspx" ;
+
+	
+	
+	@BeforeMethod
+	public void SetProperty()
+	{
+		   System.setProperty("webdriver.chrome.driver" , "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
+	       System.setProperty("webdriver.ie.driver" , "C:\\Program Files (x86)\\Internet Explorer\\IEDriverServer_32.exe");
+	       //System.setProperty("webdriver.ie.driver" , "C:\\Program Files (x86)\\Internet Explorer\\IEDriverServer_64.exe");
+	       
+	       SafariOptions options = new SafariOptions(); 
+	       options.setUseCleanSession(true); 
+			
+		    // driver = new ChromeDriver();
+		 driver = new FirefoxDriver();
+		   //driver = new InternetExplorerDriver();
+	      //WebDriver driver = new SafariDriver();
+			
+			wait = new WebDriverWait (driver, 30);
+						
+	}
+	
+	// Code for Authentication
 	
 	@Test
-	public void Logout8()
+	public void Authentication()
 	{
-		    
-		System.setProperty("webdriver.chrome.driver" , "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
-       System.setProperty("webdriver.ie.driver" , "C:\\Program Files (x86)\\Internet Explorer\\IEDriverServer_32.exe");
-       //System.setProperty("webdriver.ie.driver" , "C:\\Program Files (x86)\\Internet Explorer\\IEDriverServer_64.exe");
-       
-       SafariOptions options = new SafariOptions(); 
-       options.setUseCleanSession(true); 
+		   
 		
-		//WebDriver driver = new ChromeDriver();
-		WebDriver driver = new FirefoxDriver();
-		//WebDriver driver = new InternetExplorerDriver();
-        //WebDriver driver = new SafariDriver();
-		
-		WebDriverWait wait = new WebDriverWait (driver, 30);
-	
-		driver.get("http://172.28.182.100/Account/Presentation/Login.aspx?ReturnUrl=/core/presentation/schome.aspx");
-		
+		driver.get(myURL);
 		
 		wait.until (ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='ctl00$ContentPlaceHolder1$LoginUser$UserName']")));
 		wait.until (ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='ctl00$ContentPlaceHolder1$LoginUser$Password']")));
@@ -78,17 +94,24 @@ public class Test_StreamConnect_Logout_8 {
 		{
 				
 		System.out.println("Logout of Authentication successful");
-	
+		driver.quit();
+		
 		}
 		
 		else
 		{
 			System.out.println("Logout of Authentication Not successful");
-			
+			driver.quit();
 		}
-		
+	
+	}
 		// Code for Admin Settings
 		
+		@Test
+		public void AdminSettings()
+		{
+			driver.get(myURL);
+			
 			wait.until (ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='ctl00$ContentPlaceHolder1$LoginUser$UserName']")));
 			wait.until (ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='ctl00$ContentPlaceHolder1$LoginUser$Password']")));
 			wait.until (ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='ctl00$ContentPlaceHolder1$LoginUser$LoginButton']")));
@@ -124,16 +147,24 @@ public class Test_StreamConnect_Logout_8 {
 			{
 					
 			System.out.println("Logout of Admin Settings successful");
+			driver.quit();
 			
 			}
 			
 			else
 			{
 				System.out.println("Logout of Admin Settings Not successful");
+				driver.quit();
 			
 			}
 				
-			// Code for Manage Streams
+		}
+		
+		// Code for Manage Streams
+		 @Test
+		public void ManageStreams()
+		{
+			 driver.get(myURL);
 			
 				wait.until (ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='ctl00$ContentPlaceHolder1$LoginUser$UserName']")));
 				wait.until (ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='ctl00$ContentPlaceHolder1$LoginUser$Password']")));
@@ -170,16 +201,23 @@ public class Test_StreamConnect_Logout_8 {
 				{
 						
 				System.out.println("Logout of Manage Streams successful");
-				
+				driver.quit();
 				}
 				
 				else
 				{
 					System.out.println("Logout of Manage Streams Not successful");
+					driver.quit();
 				
-				}				
+				}		
 				
-				// Code for User Logs
+		}
+				
+		// Code for User Logs
+		 @Test
+			public void UserLogs()
+			{
+			    driver.get(myURL);
 				
 				wait.until (ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='ctl00$ContentPlaceHolder1$LoginUser$UserName']")));
 				wait.until (ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='ctl00$ContentPlaceHolder1$LoginUser$Password']")));
@@ -216,16 +254,25 @@ public class Test_StreamConnect_Logout_8 {
 				{
 						
 				System.out.println("Logout of User Logs successful");
+				driver.quit();
 				
 				}
 				
 				else
 				{
 					System.out.println("Logout of User Logs Not successful");
+					driver.quit();
 				
 				}		
 				
+			}
+		 
 				// Code for Archiving Management
+				 @Test
+					public void ArchivingManagement()
+				{
+				
+			    driver.get(myURL);
 				
 				wait.until (ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='ctl00$ContentPlaceHolder1$LoginUser$UserName']")));
 				wait.until (ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='ctl00$ContentPlaceHolder1$LoginUser$Password']")));
@@ -262,17 +309,26 @@ public class Test_StreamConnect_Logout_8 {
 				{
 						
 				System.out.println("Logout of Archiving Management successful");
+				driver.quit();
 				
 				}
 				
 				else
 				{
 					System.out.println("Logout of Archiving Management Not successful");
+					driver.quit();
 				
 				}				
 				
-				// Code for Archiving Management
-				
+					}
+				 
+				// Code for EHR Settings
+			    	 @Test
+					public void EHRSettings()
+					{
+			    		 
+			    driver.get(myURL);
+				 
 				wait.until (ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='ctl00$ContentPlaceHolder1$LoginUser$UserName']")));
 				wait.until (ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='ctl00$ContentPlaceHolder1$LoginUser$Password']")));
 				wait.until (ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='ctl00$ContentPlaceHolder1$LoginUser$LoginButton']")));
@@ -308,15 +364,23 @@ public class Test_StreamConnect_Logout_8 {
 				{
 						
 				System.out.println("Logout of EHR Settings successful");
-				
+				driver.quit();
 				}
 				
 				else
 				{
 					System.out.println("Logout of EHR Settings Not successful");
+					driver.quit();
 				
-				}				
-				// DICOM Settings
+				}			
+				
+			}
+				// Code for DICOM Settings
+			    	 @Test
+						public void DICOMSettings()
+						{
+			    		
+			    driver.get(myURL);
 				
 				wait.until (ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='ctl00$ContentPlaceHolder1$LoginUser$UserName']")));
 				wait.until (ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='ctl00$ContentPlaceHolder1$LoginUser$Password']")));
@@ -353,16 +417,26 @@ public class Test_StreamConnect_Logout_8 {
 				{
 						
 				System.out.println("Logout of DICOM Settings successful");
+				driver.quit();
 				
 				}
 				
 				else
 				{
 					System.out.println("Logout of DICOM Settings Not successful");
+					driver.quit();
 				
 				}			
 				
-				// Manage Codecs
+						}
+				
+				// Code for Manage Codecs
+
+			    	 @Test
+						public void ManageCodecs()
+						{
+						
+			   driver.get(myURL);
 				
 				wait.until (ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='ctl00$ContentPlaceHolder1$LoginUser$UserName']")));
 				wait.until (ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='ctl00$ContentPlaceHolder1$LoginUser$Password']")));
@@ -399,16 +473,18 @@ public class Test_StreamConnect_Logout_8 {
 				{
 						
 				System.out.println("Logout of Manage Codecs successful");
+				driver.quit();
 				
 				}
 				
 				else
 				{
 					System.out.println("Logout of Manage Codecs Not successful");
+					driver.quit();
 				
 				}						
 					
 				
 				
-	}
+}
 }

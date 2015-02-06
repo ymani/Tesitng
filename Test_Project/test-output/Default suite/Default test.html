@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jan 30 10:22:28 CST 2015</td>
+<td>Started on:</td><td>Fri Feb 06 12:13:28 CST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>69 seconds (69196 ms)</td>
+<tr><td>Total time:</td><td>42 seconds (42605 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,133 +67,53 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test_package.Annotate_Test.Annotate()'><b>Annotate</b><br>Test class: test_package.Annotate_Test</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 60 seconds waiting for visibility of element located by By.id: ContentPlaceHolder1_MainContentNest_grdvodGallery_ibtnGallery_3
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;
-System info: host: &apos;STAN-4P5ZP12&apos;, ip: &apos;172.28.82.55&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=9, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:23863/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: e88bc410-100a-4ebc-81c6-93215b75a7f7
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at test_package.Annotate_Test.Annotate(Annotate_Test.java:59)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with id == ContentPlaceHolder1_MainContentNest_grdvodGallery_ibtnGallery_3 (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 310 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;
-System info: host: &apos;STAN-4P5ZP12&apos;, ip: &apos;172.28.82.55&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=9, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:23863/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: e88bc410-100a-4ebc-81c6-93215b75a7f7
-	at sun.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
-	at org.openqa.selenium.By$ById.findElement(By.java:214)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
-	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
-	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 25 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace612097453", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace612097453'><pre>org.openqa.selenium.TimeoutException: Timed out after 60 seconds waiting for visibility of element located by By.id: ContentPlaceHolder1_MainContentNest_grdvodGallery_ibtnGallery_3
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;
-System info: host: &apos;STAN-4P5ZP12&apos;, ip: &apos;172.28.82.55&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=9, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:23863/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: e88bc410-100a-4ebc-81c6-93215b75a7f7
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at test_package.Annotate_Test.Annotate(Annotate_Test.java:59)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with id == ContentPlaceHolder1_MainContentNest_grdvodGallery_ibtnGallery_3 (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 310 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;
-System info: host: &apos;STAN-4P5ZP12&apos;, ip: &apos;172.28.82.55&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=9, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:23863/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: e88bc410-100a-4ebc-81c6-93215b75a7f7
-	at sun.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
-	at org.openqa.selenium.By$ById.findElement(By.java:214)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
-	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
-	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 25 more
-</pre></div></td>
-<td>69</td>
-<td>test_package.Annotate_Test@546a03af</td></tr>
+<td title='test_package.CopyOfTest_StreamConnect_Logout_8_for_IE.AdminSettings()'><b>AdminSettings</b><br>Test class: test_package.CopyOfTest_StreamConnect_Logout_8_for_IE</td>
+<td></td>
+<td>2</td>
+<td>test_package.CopyOfTest_StreamConnect_Logout_8_for_IE@649d209a</td></tr>
+<tr>
+<td title='test_package.CopyOfTest_StreamConnect_Logout_8_for_IE.ArchivingManagement()'><b>ArchivingManagement</b><br>Test class: test_package.CopyOfTest_StreamConnect_Logout_8_for_IE</td>
+<td></td>
+<td>2</td>
+<td>test_package.CopyOfTest_StreamConnect_Logout_8_for_IE@649d209a</td></tr>
+<tr>
+<td title='test_package.CopyOfTest_StreamConnect_Logout_8_for_IE.Authentication()'><b>Authentication</b><br>Test class: test_package.CopyOfTest_StreamConnect_Logout_8_for_IE</td>
+<td></td>
+<td>2</td>
+<td>test_package.CopyOfTest_StreamConnect_Logout_8_for_IE@649d209a</td></tr>
+<tr>
+<td title='test_package.CopyOfTest_StreamConnect_Logout_8_for_IE.DICOMSettings()'><b>DICOMSettings</b><br>Test class: test_package.CopyOfTest_StreamConnect_Logout_8_for_IE</td>
+<td></td>
+<td>2</td>
+<td>test_package.CopyOfTest_StreamConnect_Logout_8_for_IE@649d209a</td></tr>
+<tr>
+<td title='test_package.CopyOfTest_StreamConnect_Logout_8_for_IE.EHRSettings()'><b>EHRSettings</b><br>Test class: test_package.CopyOfTest_StreamConnect_Logout_8_for_IE</td>
+<td></td>
+<td>2</td>
+<td>test_package.CopyOfTest_StreamConnect_Logout_8_for_IE@649d209a</td></tr>
+<tr>
+<td title='test_package.CopyOfTest_StreamConnect_Logout_8_for_IE.ManageCodecs()'><b>ManageCodecs</b><br>Test class: test_package.CopyOfTest_StreamConnect_Logout_8_for_IE</td>
+<td></td>
+<td>2</td>
+<td>test_package.CopyOfTest_StreamConnect_Logout_8_for_IE@649d209a</td></tr>
+<tr>
+<td title='test_package.CopyOfTest_StreamConnect_Logout_8_for_IE.ManageStreams()'><b>ManageStreams</b><br>Test class: test_package.CopyOfTest_StreamConnect_Logout_8_for_IE</td>
+<td></td>
+<td>2</td>
+<td>test_package.CopyOfTest_StreamConnect_Logout_8_for_IE@649d209a</td></tr>
+<tr>
+<td title='test_package.CopyOfTest_StreamConnect_Logout_8_for_IE.UserLogs()'><b>UserLogs</b><br>Test class: test_package.CopyOfTest_StreamConnect_Logout_8_for_IE</td>
+<td></td>
+<td>3</td>
+<td>test_package.CopyOfTest_StreamConnect_Logout_8_for_IE@649d209a</td></tr>
 </table><p>
 </body>
 </html>

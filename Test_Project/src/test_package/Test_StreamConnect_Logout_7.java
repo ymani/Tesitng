@@ -22,12 +22,12 @@ public class Test_StreamConnect_Logout_7 {
 	{
 				
 		System.setProperty("webdriver.chrome.driver" , "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
-        System.setProperty("webdriver.ie.driver" , "C:\\Program Files (x86)\\Internet Explorer\\IEDriverServer_32.exe");
-       // System.setProperty("webdriver.ie.driver" , "C:\\Program Files (x86)\\Internet Explorer\\IEDriverServer_64.exe");
+        //System.setProperty("webdriver.ie.driver" , "C:\\Program Files (x86)\\Internet Explorer\\IEDriverServer_32.exe");
+        System.setProperty("webdriver.ie.driver" , "C:\\Program Files (x86)\\Internet Explorer\\IEDriverServer_64.exe");
 		
 		//WebDriver driver = new ChromeDriver();
-		WebDriver driver = new FirefoxDriver();
-		//WebDriver driver = new InternetExplorerDriver();
+		//WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new InternetExplorerDriver();
         //WebDriver driver = new SafariDriver();
 		
 		WebDriverWait wait = new WebDriverWait (driver, 40);
