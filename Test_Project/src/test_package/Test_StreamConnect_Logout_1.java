@@ -26,8 +26,8 @@ public class Test_StreamConnect_Logout_1 {
 		
 		//WebDriver driver = new ChromeDriver();
 		//WebDriver driver = new FirefoxDriver();
-		//WebDriver driver = new InternetExplorerDriver();
-        WebDriver driver = new SafariDriver();
+		WebDriver driver = new InternetExplorerDriver();
+       // WebDriver driver = new SafariDriver();
 		
 		WebDriverWait wait = new WebDriverWait (driver, 40);
 	
